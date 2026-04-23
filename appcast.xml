@@ -1,11 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"
-     xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>envitor</title>
-        <link>https://github.com/bloooi/envitor</link>
-        <description>envitor 업데이트 피드</description>
-        <language>ko</language>
+        <item>
+            <title>1.0</title>
+            <pubDate>Thu, 23 Apr 2026 16:15:26 +0900</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://bloooi.github.io/Envitor-1.0-1.dmg" length="2616406" type="application/octet-stream" sparkle:edSignature="tt00Stls0HaX9Mwq4RLFkaAlaYd3LpZdDKDtiDsOaSJU3pda61s/ZPqlMKym8SvKeU1sLzYYs/GTYZBwGZ2QAQ=="/>
+        </item>
     </channel>
 </rss>
