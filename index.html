@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dotenvitor - Edit .env files without breaking flow</title>
+    <meta
+      name="description"
+      content="Dotenvitor is a macOS app for finding and editing .env files directly from your project folders."
+    >
+    <meta name="theme-color" content="#ffd21e">
+    <meta property="og:title" content="Dotenvitor">
+    <meta
+      property="og:description"
+      content="Add a project once, find every .env file, and edit values through a focused macOS interface."
+    >
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/img/dotenvitor-icon.png">
+    <link rel="apple-touch-icon" href="assets/img/dotenvitor-icon.png">
+    <link rel="stylesheet" href="assets/css/site.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="#top" aria-label="Dotenvitor home">
+        <img src="assets/img/dotenvitor-icon.png" alt="" width="34" height="34">
+        <span>Dotenvitor</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#features" data-i18n="navFeatures">Features</a>
+        <a class="nav-download" href="https://bloooi.github.io/dotenvitor-releases/Envitor-1.0-1.dmg" target="_blank" rel="noopener" data-i18n="navDownload">Download</a>
+      </nav>
+      <div class="language-switcher" data-language-menu aria-label="Language">
+        <button
+          class="language-trigger"
+          type="button"
+          data-language-trigger
+          data-i18n="languageLabel"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Language
+        </button>
+        <div class="language-options" role="menu" aria-label="Language">
+          <button type="button" role="menuitemradio" data-lang="ko" aria-checked="false">한국어</button>
+          <button type="button" role="menuitemradio" data-lang="en" aria-checked="false">English</button>
+          <button type="button" role="menuitemradio" data-lang="ja" aria-checked="false">日本語</button>
+          <button type="button" role="menuitemradio" data-lang="zh" aria-checked="false">中文</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy-block">
+          <h1 id="hero-title">Dotenvitor</h1>
+          <p class="hero-copy" data-i18n="heroCopy">
+            Find hidden .env files in your project and edit them directly, without handing sensitive values to your AI coding flow.
+          </p>
+          <div class="hero-actions" aria-label="Download actions">
+            <a class="button button-primary" href="https://bloooi.github.io/dotenvitor-releases/Envitor-1.0-1.dmg" target="_blank" rel="noopener" data-i18n="downloadForMac">
+              Download for Mac
+            </a>
+            <span class="download-note" data-i18n="downloadNote">macOS 15.0 or newer</span>
+          </div>
+        </div>
+        <figure class="hero-shot">
+          <img
+            src="assets/img/dotenvitor_S01.png"
+            alt="dotenvitor form editor showing multiple .env files in one project"
+            width="2184"
+            height="1608"
+            data-i18n-alt="heroImageAlt"
+          >
+        </figure>
+      </section>
+
+      <section class="features-section" id="features" aria-label="Feature overview">
+        <article class="feature-story">
+          <div class="feature-copy">
+            <span class="feature-mark">01</span>
+            <h3 data-i18n="featureOneTitle">Add a project once</h3>
+            <p data-i18n="featureOneBody">Start from a project folder and keep the relevant .env files one click away.</p>
+          </div>
+          <img
+            src="assets/img/dotenvitor_S02.png"
+            alt="dotenvitor empty project screen with Add Project action"
+            width="2184"
+            height="1608"
+            data-i18n-alt="featureOneAlt"
+          >
+        </article>
+
+        <article class="feature-story feature-story-reverse">
+          <div class="feature-copy">
+            <span class="feature-mark">02</span>
+            <h3 data-i18n="featureTwoTitle">Discover every .env file</h3>
+            <p data-i18n="featureTwoBody">Tabs surface root and nested env files so you can move between variants quickly.</p>
+          </div>
+          <img
+            src="assets/img/dotenvitor_S01.png"
+            alt="dotenvitor form mode showing discovered .env tabs"
+            width="2184"
+            height="1608"
+            data-i18n-alt="featureTwoAlt"
+          >
+        </article>
+
+        <article class="feature-story">
+          <div class="feature-copy">
+            <span class="feature-mark">03</span>
+            <h3 data-i18n="featureThreeTitle">Switch between form and text</h3>
+            <p data-i18n="featureThreeBody">Use structured rows for normal edits, then switch to raw text when the file itself matters.</p>
+          </div>
+          <img
+            src="assets/img/dotenvitor_S05.png"
+            alt="dotenvitor text mode showing .env content"
+            width="2184"
+            height="1608"
+            data-i18n-alt="featureThreeAlt"
+          >
+        </article>
+
+        <article class="feature-story feature-story-reverse">
+          <div class="feature-copy">
+            <span class="feature-mark">04</span>
+            <h3 data-i18n="featureFourTitle">dotenvx aware</h3>
+            <p data-i18n="featureFourBody">Recognize dotenvx-related entries and keep encrypted-value workflows visible in the editor.</p>
+          </div>
+          <img
+            src="assets/img/dotenvitor_S06.png"
+            alt="dotenvitor screen showing dotenvx-related encrypted entries"
+            width="2184"
+            height="1608"
+            data-i18n-alt="featureFourAlt"
+          >
+        </article>
+
+        <div class="feature-grid" id="more-features" aria-label="More features">
+          <article>
+            <span class="feature-mark">05</span>
+            <h3 data-i18n="featureFiveTitle">Duplicate env files</h3>
+            <p data-i18n="featureFiveBody">Create a copy with every key/value pair, or duplicate only the keys when values should start blank.</p>
+          </article>
+          <article>
+            <span class="feature-mark">06</span>
+            <h3 data-i18n="featureSixTitle">Group by comments</h3>
+            <p data-i18n="featureSixBody">Use descriptive comments as section headers so related keys stay together in the form.</p>
+          </article>
+          <article>
+            <span class="feature-mark">07</span>
+            <h3 data-i18n="featureSevenTitle">Keep inline notes visible</h3>
+            <p data-i18n="featureSevenBody">Trailing comments stay attached to the row, making intent visible while you edit the value.</p>
+          </article>
+          <article>
+            <span class="feature-mark">08</span>
+            <h3 data-i18n="featureEightTitle">Activate commented keys</h3>
+            <p data-i18n="featureEightBody">Commented-out keys are still shown, and can be uncommented when you want to use them again.</p>
+          </article>
+          <article>
+            <span class="feature-mark">09</span>
+            <h3 data-i18n="featureNineTitle">Reveal in Finder</h3>
+            <p data-i18n="featureNineBody">Jump from the selected project, folder, or env file directly to its Finder location.</p>
+          </article>
+          <article>
+            <span class="feature-mark">10</span>
+            <h3 data-i18n="featureTenTitle">Spot duplicate entries</h3>
+            <p data-i18n="featureTenBody">Duplicate keys and repeated values are called out inside the row before they become harder to notice.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-label="Download">
+        <img src="assets/img/dotenvitor-icon.png" alt="" width="72" height="72">
+        <p data-i18n="finalBody">Add the project, choose the file, and make the change without leaving a focused macOS workflow.</p>
+        <a class="button button-primary" href="https://bloooi.github.io/dotenvitor-releases/Envitor-1.0-1.dmg" target="_blank" rel="noopener" data-i18n="finalDownload">
+          Download Dotenvitor
+        </a>
+      </section>
+    </main>
+
+    <script>
+      const COPY = {
+        en: {
+          navFeatures: "Features",
+          navDownload: "Download",
+          heroCopy: "Find hidden .env files in your project and edit them directly, without handing sensitive values to your AI coding flow.",
+          downloadForMac: "Download for Mac",
+          downloadNote: "macOS 15.0 or newer",
+          heroImageAlt: "dotenvitor form editor showing multiple .env files in one project",
+          featureOneTitle: "Add a project once",
+          featureOneBody: "Start from a project folder and keep the relevant .env files one click away.",
+          featureOneAlt: "dotenvitor empty project screen with Add Project action",
+          featureTwoTitle: "Discover every .env file",
+          featureTwoBody: "Tabs surface root and nested env files so you can move between variants quickly.",
+          featureTwoAlt: "dotenvitor form mode showing discovered .env tabs",
+          featureThreeTitle: "Switch between form and text",
+          featureThreeBody: "Use structured rows for normal edits, then switch to raw text when the file itself matters.",
+          featureThreeAlt: "dotenvitor text mode showing .env content",
+          featureFourTitle: "dotenvx aware",
+          featureFourBody: "Recognize dotenvx-related entries and keep encrypted-value workflows visible in the editor.",
+          featureFourAlt: "dotenvitor screen showing dotenvx-related encrypted entries",
+          featureFiveTitle: "Duplicate env files",
+          featureFiveBody: "Create a copy with every key/value pair, or duplicate only the keys when values should start blank.",
+          featureSixTitle: "Group by comments",
+          featureSixBody: "Use descriptive comments as section headers so related keys stay together in the form.",
+          featureSevenTitle: "Keep inline notes visible",
+          featureSevenBody: "Trailing comments stay attached to the row, making intent visible while you edit the value.",
+          featureEightTitle: "Activate commented keys",
+          featureEightBody: "Commented-out keys are still shown, and can be uncommented when you want to use them again.",
+          featureNineTitle: "Reveal in Finder",
+          featureNineBody: "Jump from the selected project, folder, or env file directly to its Finder location.",
+          featureTenTitle: "Spot duplicate entries",
+          featureTenBody: "Duplicate keys and repeated values are called out inside the row before they become harder to notice.",
+          finalBody: "Add the project, choose the file, and make the change without leaving a focused macOS workflow.",
+          languageLabel: "Language",
+          finalDownload: "Download Dotenvitor"
+        },
+        ko: {
+          navFeatures: "기능",
+          navDownload: "다운로드",
+          heroCopy: "프로젝트 안의 숨겨진 .env 파일을 찾아, 민감한 값을 AI 코딩 흐름에 맡기지 않고 직접 편집하세요.",
+          downloadForMac: "Mac용 다운로드",
+          downloadNote: "macOS 15.0 이상",
+          heroImageAlt: "한 프로젝트의 여러 .env 파일을 보여주는 dotenvitor 폼 편집 화면",
+          featureOneTitle: "프로젝트 한 번 추가",
+          featureOneBody: "프로젝트 폴더에서 시작해 관련 .env 파일을 가까이에 둡니다.",
+          featureOneAlt: "프로젝트 추가 동작이 있는 dotenvitor 빈 프로젝트 화면",
+          featureTwoTitle: "모든 .env 파일 발견",
+          featureTwoBody: "루트와 중첩된 env 파일을 탭으로 보여줘 변형 파일 사이를 빠르게 이동합니다.",
+          featureTwoAlt: "발견된 .env 탭을 보여주는 dotenvitor 폼 모드",
+          featureThreeTitle: "폼과 텍스트 전환",
+          featureThreeBody: "일상적인 수정은 구조화된 행으로, 파일 자체를 봐야 할 때는 원문 텍스트로 전환합니다.",
+          featureThreeAlt: ".env 내용을 보여주는 dotenvitor 텍스트 모드",
+          featureFourTitle: "dotenvx 인식",
+          featureFourBody: "dotenvx 관련 항목을 인식하고 암호화 값 흐름을 편집기 안에서 확인할 수 있게 합니다.",
+          featureFourAlt: "dotenvx 관련 암호화 항목을 보여주는 dotenvitor 화면",
+          featureFiveTitle: "env 파일 복제",
+          featureFiveBody: "키와 값을 그대로 복제하거나, 값 없이 키만 복제해 새 환경 파일을 빠르게 시작합니다.",
+          featureSixTitle: "주석 기반 그룹",
+          featureSixBody: "설명용 주석을 섹션 헤더처럼 사용해 관련 키를 폼 안에서 묶어 보여줍니다.",
+          featureSevenTitle: "인라인 설명 유지",
+          featureSevenBody: "값 뒤의 주석을 행에 붙여 보여줘, 편집 중에도 해당 값의 의도를 놓치지 않습니다.",
+          featureEightTitle: "주석 처리된 키 활성화",
+          featureEightBody: "주석 처리된 키도 숨기지 않고 보여주며, 필요할 때 바로 주석을 해제해 사용할 수 있습니다.",
+          featureNineTitle: "Finder로 이동",
+          featureNineBody: "선택한 프로젝트, 폴더, env 파일의 실제 Finder 위치로 바로 이동합니다.",
+          featureTenTitle: "중복 항목 확인",
+          featureTenBody: "중복 키와 반복되는 값을 행 안에서 표시해 놓치기 쉬운 충돌을 빠르게 발견합니다.",
+          finalBody: "프로젝트를 추가하고 파일을 고른 뒤, 집중된 macOS 흐름 안에서 바로 수정하세요.",
+          languageLabel: "언어",
+          finalDownload: "Dotenvitor 다운로드"
+        },
+        ja: {
+          navFeatures: "機能",
+          navDownload: "ダウンロード",
+          heroCopy: "プロジェクト内の隠れた .env ファイルを見つけ、機密値をAIコーディングの流れに任せず直接編集できます。",
+          downloadForMac: "Mac版をダウンロード",
+          downloadNote: "macOS 15.0以降",
+          heroImageAlt: "1つのプロジェクト内の複数の.envファイルを表示するdotenvitorのフォーム編集画面",
+          featureOneTitle: "プロジェクトを一度追加",
+          featureOneBody: "プロジェクトフォルダから始めて、関連する .env ファイルをすぐ開けるようにします。",
+          featureOneAlt: "Add Project操作が表示されたdotenvitorの空プロジェクト画面",
+          featureTwoTitle: "すべての .env ファイルを検出",
+          featureTwoBody: "ルートやネストしたenvファイルをタブで表示し、バリエーション間を素早く移動できます。",
+          featureTwoAlt: "検出された.envタブを表示するdotenvitorのフォームモード",
+          featureThreeTitle: "フォームとテキストを切り替え",
+          featureThreeBody: "通常の編集は構造化された行で、ファイル自体を確認したい時は生テキストに切り替えられます。",
+          featureThreeAlt: ".envの内容を表示するdotenvitorのテキストモード",
+          featureFourTitle: "dotenvx対応",
+          featureFourBody: "dotenvx関連の項目を認識し、暗号化値のワークフローをエディタ内で見える状態にします。",
+          featureFourAlt: "dotenvx関連の暗号化項目を表示するdotenvitor画面",
+          featureFiveTitle: "envファイルを複製",
+          featureFiveBody: "キーと値をすべて含めて複製することも、値を空にしてキーだけ複製することもできます。",
+          featureSixTitle: "コメントでグループ化",
+          featureSixBody: "説明コメントをセクション見出しとして使い、関連するキーをフォーム内でまとめます。",
+          featureSevenTitle: "インラインメモを表示",
+          featureSevenBody: "末尾コメントを行に残し、値を編集している間も意図を確認できます。",
+          featureEightTitle: "コメントアウトしたキーを有効化",
+          featureEightBody: "コメントアウトされたキーも表示し、必要な時にコメントを外して再び使えます。",
+          featureNineTitle: "Finderで表示",
+          featureNineBody: "選択したプロジェクト、フォルダ、envファイルの場所をFinderで直接開けます。",
+          featureTenTitle: "重複を見つける",
+          featureTenBody: "重複キーや繰り返しの値を行の中で示し、見落としやすい衝突を見つけやすくします。",
+          finalBody: "プロジェクトを追加し、ファイルを選び、集中したmacOSワークフローの中で変更できます。",
+          languageLabel: "言語",
+          finalDownload: "Dotenvitorをダウンロード"
+        },
+        zh: {
+          navFeatures: "功能",
+          navDownload: "下载",
+          heroCopy: "在项目中找到隐藏的 .env 文件，并直接编辑它们，不必把敏感值交给 AI 编码流程处理。",
+          downloadForMac: "下载 Mac 版",
+          downloadNote: "macOS 15.0 或更高版本",
+          heroImageAlt: "dotenvitor 表单编辑界面，显示一个项目中的多个 .env 文件",
+          featureOneTitle: "添加一次项目",
+          featureOneBody: "从项目文件夹开始，让相关 .env 文件随时可达。",
+          featureOneAlt: "dotenvitor 空项目界面，显示添加项目操作",
+          featureTwoTitle: "发现所有 .env 文件",
+          featureTwoBody: "用标签显示根目录和嵌套的 env 文件，让你快速切换不同变体。",
+          featureTwoAlt: "dotenvitor 表单模式，显示已发现的 .env 标签",
+          featureThreeTitle: "在表单和文本间切换",
+          featureThreeBody: "日常修改使用结构化行；需要查看文件本身时，切换到原始文本。",
+          featureThreeAlt: "dotenvitor 文本模式，显示 .env 内容",
+          featureFourTitle: "识别 dotenvx",
+          featureFourBody: "识别 dotenvx 相关条目，让加密值工作流在编辑器中保持可见。",
+          featureFourAlt: "dotenvitor 界面，显示 dotenvx 相关加密条目",
+          featureFiveTitle: "复制 env 文件",
+          featureFiveBody: "可以连同键和值一起复制，也可以只复制键，让新环境文件从空值开始。",
+          featureSixTitle: "按注释分组",
+          featureSixBody: "把说明性注释作为分区标题，在表单中把相关键放在一起。",
+          featureSevenTitle: "保留行内说明",
+          featureSevenBody: "值后的注释会留在对应行上，编辑时也能看到这个值的用途。",
+          featureEightTitle: "启用注释掉的键",
+          featureEightBody: "被注释掉的键仍会显示，需要时可以取消注释并再次使用。",
+          featureNineTitle: "在 Finder 中显示",
+          featureNineBody: "从所选项目、文件夹或 env 文件直接跳到 Finder 中的位置。",
+          featureTenTitle: "发现重复项",
+          featureTenBody: "在行内提示重复的键和重复的值，更容易发现容易忽略的冲突。",
+          finalBody: "添加项目、选择文件，然后在专注的 macOS 工作流中完成修改。",
+          languageLabel: "语言",
+          finalDownload: "下载 Dotenvitor"
+        }
+      };
+
+      const languageMenu = document.querySelector("[data-language-menu]");
+      const languageTrigger = document.querySelector("[data-language-trigger]");
+      const languageOptions = document.querySelectorAll("[data-lang]");
+      const translatableNodes = document.querySelectorAll("[data-i18n]");
+      const translatableAlts = document.querySelectorAll("[data-i18n-alt]");
+
+      function preferredLanguage() {
+        const saved = localStorage.getItem("dotenvitor-lang");
+        if (COPY[saved]) return saved;
+        const browserLanguage = navigator.language.toLowerCase();
+        if (browserLanguage.startsWith("ko")) return "ko";
+        if (browserLanguage.startsWith("ja")) return "ja";
+        if (browserLanguage.startsWith("zh")) return "zh";
+        return "en";
+      }
+
+      function applyLanguage(lang) {
+        const pack = COPY[lang] || COPY.en;
+        document.documentElement.lang = lang === "zh" ? "zh-Hans" : lang;
+        translatableNodes.forEach((node) => {
+          node.textContent = pack[node.dataset.i18n];
+        });
+        translatableAlts.forEach((node) => {
+          node.alt = pack[node.dataset.i18nAlt];
+        });
+        languageOptions.forEach((option) => {
+          option.setAttribute("aria-checked", String(option.dataset.lang === lang));
+        });
+        localStorage.setItem("dotenvitor-lang", lang);
+      }
+
+      function setLanguageMenuOpen(open) {
+        languageMenu.dataset.open = String(open);
+        languageTrigger.setAttribute("aria-expanded", String(open));
+      }
+
+      languageTrigger.addEventListener("click", () => {
+        setLanguageMenuOpen(languageMenu.dataset.open !== "true");
+      });
+
+      languageOptions.forEach((option) => {
+        option.addEventListener("click", () => {
+          applyLanguage(option.dataset.lang);
+          setLanguageMenuOpen(false);
+        });
+      });
+
+      document.addEventListener("click", (event) => {
+        if (languageMenu.contains(event.target) === false) {
+          setLanguageMenuOpen(false);
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          setLanguageMenuOpen(false);
+        }
+      });
+
+      applyLanguage(preferredLanguage());
+    </script>
+  </body>
+</html>
