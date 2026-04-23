@@ -4,11 +4,11 @@
         <title>envitor</title>
         <item>
             <title>1.0</title>
-            <pubDate>Thu, 23 Apr 2026 16:15:26 +0900</pubDate>
+            <pubDate>Fri, 24 Apr 2026 00:15:35 +0900</pubDate>
             <sparkle:version>1</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://bloooi.github.io/Envitor-1.0-1.dmg" length="2616406" type="application/octet-stream" sparkle:edSignature="tt00Stls0HaX9Mwq4RLFkaAlaYd3LpZdDKDtiDsOaSJU3pda61s/ZPqlMKym8SvKeU1sLzYYs/GTYZBwGZ2QAQ=="/>
+            <enclosure url="https://bloooi.github.io/dotenvitor-releases/Dotenvitor-1.0-1.dmg" length="2134932" type="application/octet-stream" sparkle:edSignature="l6999wECBzWXi1aYIy2vvrxUgkPLGZ5Aad3gyakR9+a9KU8fJ2s8erOtagcCGnc7sl1UbyemjVjZJnU4nL6qBw=="/>
         </item>
     </channel>
 </rss>
