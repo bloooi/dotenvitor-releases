@@ -3,6 +3,18 @@
     <channel>
         <title>envitor</title>
         <item>
+            <title>1.1</title>
+            <pubDate>Tue, 05 May 2026 18:01:59 +0900</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://bloooi.github.io/dotenvitor-releases/Dotenvitor-1.1-2.md</sparkle:releaseNotesLink>
+            <enclosure url="https://bloooi.github.io/dotenvitor-releases/Dotenvitor-1.1-2.dmg" length="4658729" type="application/octet-stream" sparkle:edSignature="M0hWP2ylGrtrZ+pelbuWxsVRw0Q1400K4QqNZ19OP4Xzzd3GN/hzWqgDXj5MCn6Ngg3Z5WVkCv0S/phJimhoDg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://bloooi.github.io/dotenvitor-releases/envitor2-1.delta" sparkle:deltaFrom="1" length="2320570" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="6oxL/5IB2XjaawNJ7nUt+fD/5KWOienWSDKW4abmeCpwZ338eEf+tKt8D6PB52T7AVlj1vS9Go86aRijll4ZDw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.0</title>
             <pubDate>Fri, 24 Apr 2026 00:15:35 +0900</pubDate>
             <sparkle:version>1</sparkle:version>

@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dotenvitor - 개인정보 처리방침</title>
+    <meta name="description" content="Dotenvitor 개인정보 처리방침">
+    <meta name="theme-color" content="#ffd21e">
+    <meta property="og:title" content="Dotenvitor - 개인정보 처리방침">
+    <meta property="og:description" content="Dotenvitor 개인정보 처리방침">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/img/dotenvitor-icon.png">
+    <link rel="apple-touch-icon" href="assets/img/dotenvitor-icon.png">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <style>
+      .legal-page {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 56px);
+        line-height: 1.7;
+        color: var(--ink);
+      }
+      .legal-page h1 { font-size: clamp(2rem, 4vw, 2.75rem); margin: 0 0 8px; }
+      .legal-page h2 { font-size: 1.4rem; margin: 2.5em 0 0.8em; }
+      .legal-page h3 { font-size: 1.05rem; margin: 1.6em 0 0.5em; color: var(--ink-soft); }
+      .legal-page .legal-meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 32px; }
+      .legal-page .legal-callout {
+        background: var(--accent-soft);
+        padding: 14px 18px;
+        border-radius: 8px;
+        border-left: 4px solid var(--accent-strong);
+        margin: 24px 0;
+        font-size: 0.95rem;
+      }
+      .legal-page table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.95rem; }
+      .legal-page th, .legal-page td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; }
+      .legal-page th { background: var(--paper-soft); font-weight: 600; }
+      .legal-page ul, .legal-page ol { padding-left: 1.5em; }
+      .legal-page li { margin-bottom: 0.5em; }
+      .legal-page a {
+        color: var(--ink);
+        text-decoration: underline;
+        text-decoration-color: var(--accent-strong);
+        text-underline-offset: 3px;
+      }
+      .legal-back { display: inline-block; margin-top: 56px; font-size: 0.9rem; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="index.html" aria-label="Dotenvitor home">
+        <img src="assets/img/dotenvitor-icon.png" alt="" width="34" height="34">
+        <span>Dotenvitor</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html#features" data-i18n="navFeatures">Features</a>
+        <a class="nav-download" href="https://bloooi.github.io/dotenvitor-releases/Dotenvitor-latest.dmg" target="_blank" rel="noopener" data-i18n="navDownload">Download</a>
+      </nav>
+      <div class="language-switcher" data-language-menu aria-label="Language">
+        <button
+          class="language-trigger"
+          type="button"
+          data-language-trigger
+          data-i18n="languageLabel"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Language
+        </button>
+        <div class="language-options" role="menu" aria-label="Language">
+          <button type="button" role="menuitemradio" data-lang="ko" aria-checked="false">한국어</button>
+          <button type="button" role="menuitemradio" data-lang="en" aria-checked="false">English</button>
+          <button type="button" role="menuitemradio" data-lang="ja" aria-checked="false">日本語</button>
+          <button type="button" role="menuitemradio" data-lang="zh" aria-checked="false">中文</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="legal-page">
+        <h1 data-i18n="pageTitle">Dotenvitor 개인정보 처리방침</h1>
+        <p class="legal-meta" data-i18n="effectiveDate">시행일: 2026-05-05</p>
+
+        <div class="legal-callout" data-i18n="versionNote">
+          ※ 본 방침은 Dotenvitor 1.1 이상에 적용됩니다. 이전 버전(1.0)은 어떠한 사용 통계나 크래시 데이터도 수집하지 않습니다.
+        </div>
+
+        <p data-i18n="intro">
+          본 개인정보 처리방침은 Dotenvitor (이하 "본 앱")이 사용자의 개인정보를 어떻게 처리하는지 설명합니다.
+        </p>
+
+        <h2 data-i18n="s1Title">1. 처리 목적</h2>
+        <p data-i18n="s1Body">본 앱은 다음 목적을 위해 개인정보를 수집·이용합니다.</p>
+        <ul>
+          <li data-i18n="s1Item1">앱 안정성 향상 (크래시 분석 및 디버깅)</li>
+          <li data-i18n="s1Item2">익명 사용 통계를 통한 기능 개선</li>
+        </ul>
+
+        <h2 data-i18n="s2Title">2. 처리 항목</h2>
+        <p data-i18n="s2Body">본 앱이 수집하는 항목은 다음과 같습니다.</p>
+
+        <h3 data-i18n="s2aTitle">(가) 자동 수집 (옵트아웃 가능)</h3>
+        <ul>
+          <li data-i18n="s2aItem1">익명 식별자 (UUID, 앱 설치 시 무작위 생성)</li>
+          <li data-i18n="s2aItem2">운영체제 버전, 앱 버전, 빌드 번호</li>
+          <li data-i18n="s2aItem3">시스템 로케일 및 선호 언어</li>
+          <li data-i18n="s2aItem4">앱 사용 이벤트 (예: 프로젝트 추가, 파일 편집 모드 전환 등의 카운트)</li>
+          <li data-i18n="s2aItem5">크래시 발생 시 스택 추적 및 디바이스 모델 정보</li>
+        </ul>
+
+        <h3 data-i18n="s2bTitle">(나) 본 앱이 절대 수집하지 않는 정보</h3>
+        <ul>
+          <li data-i18n="s2bItem1">사용자가 편집하는 .env 파일의 키 이름, 값, 내용</li>
+          <li data-i18n="s2bItem2">파일 경로, 파일명, 프로젝트 디렉터리명</li>
+          <li data-i18n="s2bItem3">IP 주소</li>
+          <li data-i18n="s2bItem4">사용자가 입력한 자유 텍스트</li>
+          <li data-i18n="s2bItem5">이메일, 이름, 전화번호 등 개인 식별 정보</li>
+        </ul>
+
+        <h2 data-i18n="s3Title">3. 보유 기간</h2>
+        <ul>
+          <li data-i18n="s3Item1">Sentry (크래시 보고): 90일</li>
+          <li data-i18n="s3Item2">PostHog (사용 통계): 7년 (각 서비스 기본값)</li>
+          <li data-i18n="s3Item3">사용자가 옵트아웃하면 즉시 더 이상의 데이터를 전송하지 않습니다.</li>
+        </ul>
+
+        <h2 data-i18n="s4Title">4. 제3자 위탁</h2>
+        <p data-i18n="s4Body">본 앱은 다음 외부 서비스를 데이터 처리자로 이용합니다.</p>
+        <table>
+          <thead>
+            <tr>
+              <th data-i18n="tableCol1">위탁받는 자</th>
+              <th data-i18n="tableCol2">위탁 업무 내용</th>
+              <th data-i18n="tableCol3">소재지</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Functional Software, Inc. (Sentry)</td>
+              <td data-i18n="sentryWork">크래시 보고 수집 및 분석</td>
+              <td data-i18n="usLocation">미국</td>
+            </tr>
+            <tr>
+              <td>PostHog Inc.</td>
+              <td data-i18n="posthogWork">익명 사용 통계 수집 및 분석</td>
+              <td data-i18n="usLocation2">미국</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 data-i18n="s5Title">5. 개인정보의 국외 이전</h2>
+        <p data-i18n="s5Body">위 위탁에 따라 개인정보가 미국으로 이전됩니다. 이전되는 항목은 "2. 처리 항목"의 자동 수집 항목과 동일합니다.</p>
+
+        <h2 data-i18n="s6Title">6. 정보주체의 권리</h2>
+        <p data-i18n="s6Body">사용자는 다음 권리를 행사할 수 있습니다.</p>
+
+        <h3 data-i18n="s6aTitle">(가) 옵트아웃 (수집 중단)</h3>
+        <p data-i18n="s6aBody">앱 메뉴 > 설정 > 개인정보 > "익명 사용 통계 공유" 토글을 끄면 즉시 데이터 전송이 중단됩니다.</p>
+
+        <h3 data-i18n="s6bTitle">(나) 데이터 삭제 요청</h3>
+        <p data-i18n="s6bBody">이메일로 본인의 익명 식별자(UUID)와 함께 삭제를 요청하시면 관련 외부 서비스에서 해당 데이터를 삭제하도록 조치합니다.</p>
+
+        <h2 data-i18n="s7Title">7. 개인정보 보호책임자</h2>
+        <p>
+          <span data-i18n="s7Name">성명: JaeBeom Lee (이재범)</span><br>
+          <span data-i18n="s7Contact">연락처: </span><a href="mailto:btv9200@gmail.com">btv9200@gmail.com</a>
+        </p>
+
+        <h2 data-i18n="s8Title">8. 처리방침의 변경</h2>
+        <p data-i18n="s8Body">본 처리방침은 관련 법령, 정책 또는 보안 기술의 변경에 따라 개정될 수 있습니다. 변경 시 본 페이지에 공지합니다.</p>
+
+        <h2 data-i18n="s9Title">9. 시행일</h2>
+        <p data-i18n="s9Body">본 방침은 2026년 5월 5일부터 시행됩니다.</p>
+
+        <a class="legal-back" href="index.html" data-i18n="backToHome">← 홈으로 돌아가기</a>
+      </div>
+    </main>
+
+    <script>
+      const COPY = {
+        ko: {
+          navFeatures: "기능",
+          navDownload: "다운로드",
+          languageLabel: "언어",
+          pageTitle: "Dotenvitor 개인정보 처리방침",
+          effectiveDate: "시행일: 2026-05-05",
+          versionNote: "※ 본 방침은 Dotenvitor 1.1 이상에 적용됩니다. 이전 버전(1.0)은 어떠한 사용 통계나 크래시 데이터도 수집하지 않습니다.",
+          intro: "본 개인정보 처리방침은 Dotenvitor (이하 \"본 앱\")이 사용자의 개인정보를 어떻게 처리하는지 설명합니다.",
+          s1Title: "1. 처리 목적",
+          s1Body: "본 앱은 다음 목적을 위해 개인정보를 수집·이용합니다.",
+          s1Item1: "앱 안정성 향상 (크래시 분석 및 디버깅)",
+          s1Item2: "익명 사용 통계를 통한 기능 개선",
+          s2Title: "2. 처리 항목",
+          s2Body: "본 앱이 수집하는 항목은 다음과 같습니다.",
+          s2aTitle: "(가) 자동 수집 (옵트아웃 가능)",
+          s2aItem1: "익명 식별자 (UUID, 앱 설치 시 무작위 생성)",
+          s2aItem2: "운영체제 버전, 앱 버전, 빌드 번호",
+          s2aItem3: "시스템 로케일 및 선호 언어",
+          s2aItem4: "앱 사용 이벤트 (예: 프로젝트 추가, 파일 편집 모드 전환 등의 카운트)",
+          s2aItem5: "크래시 발생 시 스택 추적 및 디바이스 모델 정보",
+          s2bTitle: "(나) 본 앱이 절대 수집하지 않는 정보",
+          s2bItem1: "사용자가 편집하는 .env 파일의 키 이름, 값, 내용",
+          s2bItem2: "파일 경로, 파일명, 프로젝트 디렉터리명",
+          s2bItem3: "IP 주소",
+          s2bItem4: "사용자가 입력한 자유 텍스트",
+          s2bItem5: "이메일, 이름, 전화번호 등 개인 식별 정보",
+          s3Title: "3. 보유 기간",
+          s3Item1: "Sentry (크래시 보고): 90일",
+          s3Item2: "PostHog (사용 통계): 7년 (각 서비스 기본값)",
+          s3Item3: "사용자가 옵트아웃하면 즉시 더 이상의 데이터를 전송하지 않습니다.",
+          s4Title: "4. 제3자 위탁",
+          s4Body: "본 앱은 다음 외부 서비스를 데이터 처리자로 이용합니다.",
+          tableCol1: "위탁받는 자",
+          tableCol2: "위탁 업무 내용",
+          tableCol3: "소재지",
+          sentryWork: "크래시 보고 수집 및 분석",
+          usLocation: "미국",
+          posthogWork: "익명 사용 통계 수집 및 분석",
+          usLocation2: "미국",
+          s5Title: "5. 개인정보의 국외 이전",
+          s5Body: "위 위탁에 따라 개인정보가 미국으로 이전됩니다. 이전되는 항목은 \"2. 처리 항목\"의 자동 수집 항목과 동일합니다.",
+          s6Title: "6. 정보주체의 권리",
+          s6Body: "사용자는 다음 권리를 행사할 수 있습니다.",
+          s6aTitle: "(가) 옵트아웃 (수집 중단)",
+          s6aBody: "앱 설정 → \"개인정보\" 탭에서 사용 통계 수집을 끌 수 있습니다.",
+          s6bTitle: "(나) 데이터 삭제 요청",
+          s6bBody: "이메일로 본인의 익명 식별자(UUID)와 함께 삭제를 요청하시면 관련 외부 서비스에서 해당 데이터를 삭제하도록 조치합니다.",
+          s7Title: "7. 개인정보 보호책임자",
+          s7Name: "성명: JaeBeom Lee (이재범)",
+          s7Contact: "연락처: ",
+          s8Title: "8. 처리방침의 변경",
+          s8Body: "본 처리방침은 관련 법령, 정책 또는 보안 기술의 변경에 따라 개정될 수 있습니다. 변경 시 본 페이지에 공지합니다.",
+          s9Title: "9. 시행일",
+          s9Body: "본 방침은 2026년 5월 5일부터 시행됩니다.",
+          backToHome: "← 홈으로 돌아가기"
+        },
+        en: {
+          navFeatures: "Features",
+          navDownload: "Download",
+          languageLabel: "Language",
+          pageTitle: "Dotenvitor Privacy Policy",
+          effectiveDate: "Effective date: 2026-05-05",
+          versionNote: "※ This policy applies to Dotenvitor 1.1 and later. Version 1.0 does not collect any usage statistics or crash data.",
+          intro: "This Privacy Policy explains how Dotenvitor (the \"App\") handles your personal information.",
+          s1Title: "1. Purpose of Processing",
+          s1Body: "The App collects and uses personal information for the following purposes.",
+          s1Item1: "Improving app stability (crash analysis and debugging)",
+          s1Item2: "Improving features through anonymous usage statistics",
+          s2Title: "2. Data Collected",
+          s2Body: "The App collects the following information.",
+          s2aTitle: "(a) Automatically Collected (opt-out available)",
+          s2aItem1: "Anonymous identifier (UUID, randomly generated at app install)",
+          s2aItem2: "OS version, app version, build number",
+          s2aItem3: "System locale and preferred language",
+          s2aItem4: "App usage events (e.g. counts of project additions, editor mode switches)",
+          s2aItem5: "Stack traces and device model information on crash",
+          s2bTitle: "(b) Information the App Never Collects",
+          s2bItem1: "Key names, values, or contents of .env files you edit",
+          s2bItem2: "File paths, file names, or project directory names",
+          s2bItem3: "IP address",
+          s2bItem4: "Free-form text entered by the user",
+          s2bItem5: "Personally identifiable information such as email, name, or phone number",
+          s3Title: "3. Retention Period",
+          s3Item1: "Sentry (crash reporting): 90 days",
+          s3Item2: "PostHog (usage statistics): 7 years (each service's default)",
+          s3Item3: "If you opt out, no further data is transmitted immediately.",
+          s4Title: "4. Third-Party Processors",
+          s4Body: "The App uses the following external services as data processors.",
+          tableCol1: "Processor",
+          tableCol2: "Processing Activity",
+          tableCol3: "Location",
+          sentryWork: "Crash report collection and analysis",
+          usLocation: "United States",
+          posthogWork: "Anonymous usage statistics collection and analysis",
+          usLocation2: "United States",
+          s5Title: "5. International Transfer of Personal Data",
+          s5Body: "Pursuant to the above arrangements, personal data is transferred to the United States. The transferred items are identical to the automatically collected items described in Section 2.",
+          s6Title: "6. Your Rights",
+          s6Body: "You may exercise the following rights.",
+          s6aTitle: "(a) Opt Out (stop collection)",
+          s6aBody: "You can disable usage statistics collection in the Settings → Privacy tab.",
+          s6bTitle: "(b) Data Deletion Request",
+          s6bBody: "Email us with your anonymous identifier (UUID) to request deletion. We will take steps to delete that data from the relevant external services.",
+          s7Title: "7. Privacy Officer",
+          s7Name: "Name: JaeBeom Lee",
+          s7Contact: "Contact: ",
+          s8Title: "8. Policy Updates",
+          s8Body: "This policy may be revised due to changes in applicable laws, policies, or security technology. Any changes will be announced on this page.",
+          s9Title: "9. Effective Date",
+          s9Body: "This policy is effective from May 5, 2026.",
+          backToHome: "← Back to Home"
+        },
+        ja: {
+          navFeatures: "機能",
+          navDownload: "ダウンロード",
+          languageLabel: "言語",
+          pageTitle: "Dotenvitor プライバシーポリシー",
+          effectiveDate: "施行日: 2026-05-05",
+          versionNote: "※ 本ポリシーは Dotenvitor 1.1 以降に適用されます。旧バージョン（1.0）は使用統計やクラッシュデータを一切収集しません。",
+          intro: "本プライバシーポリシーは、Dotenvitor（以下「本アプリ」）がユーザーの個人情報をどのように取り扱うかを説明します。",
+          s1Title: "1. 処理の目的",
+          s1Body: "本アプリは以下の目的で個人情報を収集・利用します。",
+          s1Item1: "アプリの安定性向上（クラッシュ解析およびデバッグ）",
+          s1Item2: "匿名の使用統計による機能改善",
+          s2Title: "2. 処理する情報",
+          s2Body: "本アプリが収集する情報は以下のとおりです。",
+          s2aTitle: "（ア）自動収集（オプトアウト可能）",
+          s2aItem1: "匿名識別子（UUID、アプリインストール時にランダム生成）",
+          s2aItem2: "OSバージョン、アプリバージョン、ビルド番号",
+          s2aItem3: "システムロケールおよび優先言語",
+          s2aItem4: "アプリ使用イベント（例：プロジェクト追加やエディタモード切替の回数）",
+          s2aItem5: "クラッシュ時のスタックトレースおよびデバイスモデル情報",
+          s2bTitle: "（イ）本アプリが絶対に収集しない情報",
+          s2bItem1: "ユーザーが編集する .env ファイルのキー名・値・内容",
+          s2bItem2: "ファイルパス、ファイル名、プロジェクトディレクトリ名",
+          s2bItem3: "IPアドレス",
+          s2bItem4: "ユーザーが入力した自由テキスト",
+          s2bItem5: "メール、氏名、電話番号等の個人識別情報",
+          s3Title: "3. 保存期間",
+          s3Item1: "Sentry（クラッシュレポート）: 90日",
+          s3Item2: "PostHog（使用統計）: 7年（各サービスのデフォルト値）",
+          s3Item3: "オプトアウトした場合、以降のデータ送信は直ちに停止されます。",
+          s4Title: "4. 第三者への委託",
+          s4Body: "本アプリはデータ処理者として以下の外部サービスを利用しています。",
+          tableCol1: "委託先",
+          tableCol2: "委託業務の内容",
+          tableCol3: "所在地",
+          sentryWork: "クラッシュレポートの収集・分析",
+          usLocation: "米国",
+          posthogWork: "匿名使用統計の収集・分析",
+          usLocation2: "米国",
+          s5Title: "5. 個人情報の国外移転",
+          s5Body: "上記委託に伴い、個人情報が米国へ移転されます。移転される項目は「2. 処理する情報」の自動収集項目と同一です。",
+          s6Title: "6. 情報主体の権利",
+          s6Body: "ユーザーは以下の権利を行使できます。",
+          s6aTitle: "（ア）オプトアウト（収集の停止）",
+          s6aBody: "アプリの設定 → \"プライバシー\" タブで使用統計の収集を無効化できます。",
+          s6bTitle: "（イ）データ削除の申請",
+          s6bBody: "匿名識別子（UUID）を添えてメールでご申請いただくと、関連する外部サービスからそのデータを削除するよう対応します。",
+          s7Title: "7. 個人情報保護責任者",
+          s7Name: "氏名: JaeBeom Lee",
+          s7Contact: "連絡先: ",
+          s8Title: "8. ポリシーの変更",
+          s8Body: "本ポリシーは、関連法令・方針・セキュリティ技術の変更に応じて改定されることがあります。変更がある場合は本ページでお知らせします。",
+          s9Title: "9. 施行日",
+          s9Body: "本ポリシーは2026年5月5日から施行されます。",
+          backToHome: "← ホームに戻る"
+        },
+        zh: {
+          navFeatures: "功能",
+          navDownload: "下载",
+          languageLabel: "语言",
+          pageTitle: "Dotenvitor 隐私政策",
+          effectiveDate: "生效日期: 2026-05-05",
+          versionNote: "※ 本政策适用于 Dotenvitor 1.1 及更高版本。旧版本（1.0）不收集任何使用统计或崩溃数据。",
+          intro: "本隐私政策说明 Dotenvitor（以下简称"本应用"）如何处理您的个人信息。",
+          s1Title: "1. 处理目的",
+          s1Body: "本应用出于以下目的收集和使用个人信息。",
+          s1Item1: "提升应用稳定性（崩溃分析与调试）",
+          s1Item2: "通过匿名使用统计改进功能",
+          s2Title: "2. 处理的信息",
+          s2Body: "本应用收集以下信息。",
+          s2aTitle: "（甲）自动收集（可选择退出）",
+          s2aItem1: "匿名标识符（UUID，应用安装时随机生成）",
+          s2aItem2: "操作系统版本、应用版本、构建号",
+          s2aItem3: "系统区域设置及首选语言",
+          s2aItem4: "应用使用事件（例如：添加项目、切换编辑器模式的次数）",
+          s2aItem5: "崩溃时的堆栈跟踪及设备型号信息",
+          s2bTitle: "（乙）本应用绝不收集的信息",
+          s2bItem1: "您编辑的 .env 文件的键名、值或内容",
+          s2bItem2: "文件路径、文件名或项目目录名",
+          s2bItem3: "IP 地址",
+          s2bItem4: "用户输入的自由文本",
+          s2bItem5: "邮箱、姓名、电话号码等个人身份信息",
+          s3Title: "3. 保存期限",
+          s3Item1: "Sentry（崩溃报告）：90天",
+          s3Item2: "PostHog（使用统计）：7年（各服务默认值）",
+          s3Item3: "选择退出后，将立即停止传输数据。",
+          s4Title: "4. 第三方数据处理者",
+          s4Body: "本应用委托以下外部服务作为数据处理者。",
+          tableCol1: "处理者",
+          tableCol2: "处理内容",
+          tableCol3: "所在地",
+          sentryWork: "崩溃报告的收集与分析",
+          usLocation: "美国",
+          posthogWork: "匿名使用统计的收集与分析",
+          usLocation2: "美国",
+          s5Title: "5. 个人信息的境外传输",
+          s5Body: "依据上述委托，个人信息将被传输至美国。传输的项目与第2条中自动收集的项目相同。",
+          s6Title: "6. 您的权利",
+          s6Body: "您可以行使以下权利。",
+          s6aTitle: "（甲）选择退出（停止收集）",
+          s6aBody: "可在应用设置 → \"隐私\" 选项卡中关闭使用统计收集。",
+          s6bTitle: "（乙）数据删除申请",
+          s6bBody: "请通过电子邮件附上您的匿名标识符（UUID）提交删除申请，我们将采取措施从相关外部服务中删除该数据。",
+          s7Title: "7. 隐私保护负责人",
+          s7Name: "姓名: JaeBeom Lee",
+          s7Contact: "联系方式: ",
+          s8Title: "8. 政策变更",
+          s8Body: "本政策可能因相关法律、政策或安全技术的变化而修订。如有变更，将在本页面公告。",
+          s9Title: "9. 生效日期",
+          s9Body: "本政策自2026年5月5日起生效。",
+          backToHome: "← 返回主页"
+        }
+      };
+
+      const languageMenu = document.querySelector("[data-language-menu]");
+      const languageTrigger = document.querySelector("[data-language-trigger]");
+      const languageOptions = document.querySelectorAll("[data-lang]");
+      const translatableNodes = document.querySelectorAll("[data-i18n]");
+
+      function preferredLanguage() {
+        const saved = localStorage.getItem("dotenvitor-lang");
+        if (COPY[saved]) return saved;
+        const browserLanguage = navigator.language.toLowerCase();
+        if (browserLanguage.startsWith("ko")) return "ko";
+        if (browserLanguage.startsWith("ja")) return "ja";
+        if (browserLanguage.startsWith("zh")) return "zh";
+        return "en";
+      }
+
+      function applyLanguage(lang) {
+        const pack = COPY[lang] || COPY.en;
+        document.documentElement.lang = lang === "zh" ? "zh-Hans" : lang;
+        translatableNodes.forEach((node) => {
+          node.textContent = pack[node.dataset.i18n];
+        });
+        languageOptions.forEach((option) => {
+          option.setAttribute("aria-checked", String(option.dataset.lang === lang));
+        });
+        localStorage.setItem("dotenvitor-lang", lang);
+      }
+
+      function setLanguageMenuOpen(open) {
+        languageMenu.dataset.open = String(open);
+        languageTrigger.setAttribute("aria-expanded", String(open));
+      }
+
+      languageTrigger.addEventListener("click", () => {
+        setLanguageMenuOpen(languageMenu.dataset.open !== "true");
+      });
+
+      languageOptions.forEach((option) => {
+        option.addEventListener("click", () => {
+          applyLanguage(option.dataset.lang);
+          setLanguageMenuOpen(false);
+        });
+      });
+
+      document.addEventListener("click", (event) => {
+        if (languageMenu.contains(event.target) === false) {
+          setLanguageMenuOpen(false);
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          setLanguageMenuOpen(false);
+        }
+      });
+
+      applyLanguage(preferredLanguage());
+    </script>
+  </body>
+</html>
